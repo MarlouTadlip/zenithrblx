@@ -4,10 +4,22 @@ version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 
+[place]
+shared-packages = "game.ReplicatedStorage.Packages"
+
 [dependencies]
-promise = "evaera/promise@4.0.0"
-signal = "sleitnick/signal@2.0.3"
-knit = "sleitnick/knit@1.7.0"
+# UI Layer
+React = "jsdotlua/react@17.1.0"
+ReactRoblox = "jsdotlua/react-roblox@17.1.0"
+
+# Logic Layer (ECS)
+Jecs = "ukendio/jecs@0.9.0"
+
+# Utils
+Promise = "evaera/promise@4.0.0"
+Signal = "sleitnick/signal@2.0.3"
 
 [server-dependencies]
-janitor = "howmanysmall/janitor@1.18.3"
+# Networking & Data
+ByteNet = "ffrostflame/bytenet@0.4.6"
+Janitor = "howmanysmall/janitor@1.18.3"
